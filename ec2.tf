@@ -1,6 +1,6 @@
 resource "aws_instance" "expense" {
   ami                    = var.ami_id
-  instance_type          = var.instance_type
+  instance_type          = "t3.micro"
   vpc_security_group_ids = var.security_group_ids
   tags                   = var.tags
 }
